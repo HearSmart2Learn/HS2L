@@ -3,18 +3,6 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 /* Responsive Fix */
-.feature {
-    display: flex;
-    flex-wrap: wrap;
-    align-items: center;
-    gap: 20px;
-}
-
-.feature .content {
-    flex: 1;
-    min-width: 300px;
-}
-
 .feature .image {
     flex: 1;
     min-width: 250px;
