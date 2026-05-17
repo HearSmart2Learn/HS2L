@@ -3,23 +3,30 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 /* Responsive Fix */
-.feature .image {
-    flex: 1;
-    min-width: 250px;
-}
-
-.feature img {
+/* Image responsiveness fix */
+.feature .image img {
     width: 100%;
     height: auto;
     display: block;
 }
 
-@media screen and (max-width: 768px) {
-    .feature {
-        flex-direction: column;
-    }
+/* Prevent text overlap */
+.feature .content {
+    overflow-wrap: break-word;
+    padding: 1rem;
 }
 
+/* Mobile responsiveness */
+@media screen and (max-width: 980px) {
+    .feature {
+        display: block;
+    }
+
+    .feature .image,
+    .feature .content {
+        width: 100%;
+    }
+}
 
 
 
