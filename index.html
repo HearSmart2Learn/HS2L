@@ -6,7 +6,6 @@
 <title>HearSmart2Learn</title>
 
 <style>
-/* RESET */
 * {
 	margin: 0;
 	padding: 0;
@@ -16,8 +15,8 @@
 
 body {
 	line-height: 1.6;
-	color: #222;
-	background: #fff;
+	color: #1f2937;
+	background: #ffffff;
 }
 
 /* HERO */
@@ -29,17 +28,17 @@ body {
 }
 
 .hero h1 {
-	font-size: 2.5rem;
+	font-size: 2.6rem;
 	margin-bottom: 10px;
 }
 
 .hero p {
 	font-size: 1.2rem;
-	max-width: 700px;
-	margin: 0 auto;
+	max-width: 750px;
+	margin: auto;
 }
 
-/* SECTION WRAPPER */
+/* SECTIONS */
 .container {
 	max-width: 1100px;
 	margin: auto;
@@ -49,28 +48,33 @@ body {
 /* INTRO */
 .intro {
 	text-align: center;
-	margin-bottom: 40px;
 }
 
-/* FEATURE GRID */
-.features {
+.intro h2 {
+	margin-bottom: 15px;
+	color: #0369a1;
+}
+
+/* CARDS */
+.grid {
 	display: grid;
 	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
 	gap: 30px;
+	margin-top: 40px;
 }
 
 .card {
-	background: #f9fafb;
+	background: #f8fafc;
 	border-radius: 12px;
 	overflow: hidden;
-	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	box-shadow: 0 4px 14px rgba(0,0,0,0.08);
 	display: flex;
 	flex-direction: column;
 }
 
 .card img {
 	width: 100%;
-	height: 200px;
+	height: 220px;
 	object-fit: cover;
 }
 
@@ -79,21 +83,21 @@ body {
 }
 
 .card h3 {
-	margin-bottom: 10px;
 	color: #0369a1;
+	margin-bottom: 10px;
 }
 
-/* CTA SECTION */
+/* CTA */
 .cta {
 	background: #f1f5f9;
 	text-align: center;
-	padding: 60px 20px;
+	padding: 70px 20px;
 }
 
 .button {
 	display: inline-block;
 	margin-top: 20px;
-	padding: 12px 24px;
+	padding: 12px 25px;
 	background: #0ea5e9;
 	color: white;
 	text-decoration: none;
@@ -104,7 +108,7 @@ body {
 footer {
 	background: #0f172a;
 	color: white;
-	padding: 40px 20px;
+	padding: 50px 20px;
 	text-align: center;
 }
 
@@ -114,7 +118,7 @@ footer p {
 
 @media (max-width: 600px) {
 	.hero h1 {
-		font-size: 1.8rem;
+		font-size: 1.9rem;
 	}
 }
 </style>
@@ -126,28 +130,35 @@ footer p {
 <!-- HERO -->
 <section class="hero">
 	<h1>HearSmart2Learn</h1>
-	<p>Empowering every child to hear, learn, and thrive through inclusive hearing and learning support.</p>
+	<p>
+		Empowering every child to hear, learn, and thrive.
+		Healthy hearing. Stronger learning. Brighter futures.
+	</p>
 </section>
 
 <!-- INTRO -->
 <section class="container intro">
-	<h2>Inclusive Education Through Hearing Health</h2>
+	<h2>Inclusive Education Through Hearing & Learning Support</h2>
 	<p>
-		We bridge hearing health, learning support, and education to ensure no child is left behind.
-		Early identification and intervention can transform lives.
+		HearSmart2Learn is dedicated to advancing inclusive education by addressing hearing and learning challenges
+		that affect children’s academic, communication, and social development.
 	</p>
 </section>
 
-<!-- FEATURES -->
-<section class="container features">
+<!-- MISSION + WHY -->
+<section class="container grid">
 
 	<div class="card">
 		<img src="images/pic01.jpg" alt="">
 		<div class="card-content">
 			<h3>Our Mission</h3>
 			<p>
-				To bridge hearing health, learning support, and inclusive education
-				through evidence-based interventions and community outreach.
+				Our mission is to bridge the gap between hearing health, children's mental health,
+				learning support, and inclusive education within underserved and diverse communities.
+				We use research-based and evidence-based approaches.
+				<br><br>
+				We work with schools, families, healthcare professionals, and communities to provide assessment,
+				early intervention, family support, and awareness.
 			</p>
 		</div>
 	</div>
@@ -157,8 +168,11 @@ footer p {
 		<div class="card-content">
 			<h3>Why It Matters</h3>
 			<p>
-				Hearing and learning challenges often go unnoticed, affecting academic success and confidence.
-				Early support changes everything.
+				Many children experience hearing and learning challenges that go unnoticed,
+				affecting confidence, communication, academic performance, and long-term opportunities.
+				<br><br>
+				Early identification and timely support can transform a child’s educational journey.
+				Every child deserves to participate, learn, and thrive in an inclusive environment.
 			</p>
 		</div>
 	</div>
@@ -168,25 +182,32 @@ footer p {
 		<div class="card-content">
 			<h3>What We Do</h3>
 			<p>
-				Screenings, classroom acoustic assessments, referrals,
-				aural rehabilitation, and family support programs.
+				We address listening barriers through classroom acoustic assessments and hearing screenings.
+				We provide teacher-led screening tools such as CHAPS, SIFTER, and SAEBRS.
+				<br><br>
+				We support learners through referrals, aural rehabilitation, counselling, and family support.
+				We also advocate for inclusive education and raise awareness about hearing and learning challenges.
 			</p>
 		</div>
 	</div>
 
 </section>
 
-<!-- CALL TO ACTION -->
+<!-- CTA -->
 <section class="cta">
 	<h2>Partner With Us</h2>
-	<p>Help us reach more children and build inclusive learning environments.</p>
+	<p>
+		Whether you are a parent, educator, healthcare professional, volunteer, or organisation,
+		your support helps us reach more children.
+	</p>
 
-	<a class="button" href="#">Donate / Support</a>
+	<a class="button" href="#">Leave a Donation</a>
 
-	<p style="margin-top:20px;">
-		Capitec Bank Business<br>
+	<p style="margin-top:25px;">
+		<strong>Banking Details</strong><br>
+		Capitec Bank (Business)<br>
 		HearSmart2Learn<br>
-		Account: 2547479059
+		Account No: 2547479059
 	</p>
 </section>
 
