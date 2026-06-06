@@ -1,215 +1,203 @@
-<!DOCTYPE HTML>
-<html>
+<!DOCTYPE html>
+<html lang="en">
 <head>
-	<title>HearSmart2Learn</title>
-	<meta charset="utf-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-	<link rel="stylesheet" href="assets/css/main.css" />
+<meta charset="UTF-8" />
+<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+<title>HearSmart2Learn</title>
 
-	<!-- FIXED LAYOUT OVERRIDES -->
-	<style>
-		/* Prevent images breaking layout */
-		img {
-			max-width: 100%;
-			height: auto;
-			display: block;
-		}
+<style>
+/* RESET */
+* {
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: Arial, sans-serif;
+}
 
-		.feature .image img {
-			width: 100%;
-			height: auto;
-			object-fit: cover;
-		}
+body {
+	line-height: 1.6;
+	color: #222;
+	background: #fff;
+}
 
-		/* Prevent horizontal overflow */
-		body {
-			overflow-x: hidden;
-		}
+/* HERO */
+.hero {
+	background: linear-gradient(135deg, #0ea5e9, #0369a1);
+	color: white;
+	text-align: center;
+	padding: 80px 20px;
+}
 
-		/* Better section spacing */
-		#main section {
-			margin-bottom: 40px;
-		}
+.hero h1 {
+	font-size: 2.5rem;
+	margin-bottom: 10px;
+}
 
-		/* Footer spacing fix */
-		#footer p {
-			margin: 6px 0;
-		}
+.hero p {
+	font-size: 1.2rem;
+	max-width: 700px;
+	margin: 0 auto;
+}
 
-		/* Center donation button */
-		.actions.special {
-			display: flex;
-			justify-content: center;
-		}
+/* SECTION WRAPPER */
+.container {
+	max-width: 1100px;
+	margin: auto;
+	padding: 60px 20px;
+}
 
-		/* Mobile fix */
-		@media screen and (max-width: 736px) {
-			.feature {
-				flex-direction: column !important;
-			}
-		}
-	</style>
+/* INTRO */
+.intro {
+	text-align: center;
+	margin-bottom: 40px;
+}
+
+/* FEATURE GRID */
+.features {
+	display: grid;
+	grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+	gap: 30px;
+}
+
+.card {
+	background: #f9fafb;
+	border-radius: 12px;
+	overflow: hidden;
+	box-shadow: 0 4px 12px rgba(0,0,0,0.08);
+	display: flex;
+	flex-direction: column;
+}
+
+.card img {
+	width: 100%;
+	height: 200px;
+	object-fit: cover;
+}
+
+.card-content {
+	padding: 20px;
+}
+
+.card h3 {
+	margin-bottom: 10px;
+	color: #0369a1;
+}
+
+/* CTA SECTION */
+.cta {
+	background: #f1f5f9;
+	text-align: center;
+	padding: 60px 20px;
+}
+
+.button {
+	display: inline-block;
+	margin-top: 20px;
+	padding: 12px 24px;
+	background: #0ea5e9;
+	color: white;
+	text-decoration: none;
+	border-radius: 8px;
+}
+
+/* FOOTER */
+footer {
+	background: #0f172a;
+	color: white;
+	padding: 40px 20px;
+	text-align: center;
+}
+
+footer p {
+	margin: 5px 0;
+}
+
+@media (max-width: 600px) {
+	.hero h1 {
+		font-size: 1.8rem;
+	}
+}
+</style>
+
 </head>
 
-<body class="is-preload">
+<body>
 
-	<!-- Header -->
-	<div id="header">
-		<span class="logo icon fa-paper-plane"></span>
-		<h1>HEARSMART2LEARN. Website still under construction.</h1>
-		<p>Empowering Every Child to Hear, Learn, and Thrive
-		<br />
-		Healthy Hearing. Stronger Learning. Brighter Future.</p>
-	</div>
+<!-- HERO -->
+<section class="hero">
+	<h1>HearSmart2Learn</h1>
+	<p>Empowering every child to hear, learn, and thrive through inclusive hearing and learning support.</p>
+</section>
 
-	<!-- Main -->
-	<div id="main">
+<!-- INTRO -->
+<section class="container intro">
+	<h2>Inclusive Education Through Hearing Health</h2>
+	<p>
+		We bridge hearing health, learning support, and education to ensure no child is left behind.
+		Early identification and intervention can transform lives.
+	</p>
+</section>
 
-		<header class="major container medium">
-			<h2>HearSmart2Learn is dedicated to advancing inclusive education
-			<br />
-			by addressing hearing and learning challenges
-			<br />
-			that affect children’s academic and social development.</h2>
-		</header>
+<!-- FEATURES -->
+<section class="container features">
 
-		<div class="box alt container">
-
-			<section class="feature left">
-				<a href="#" class="image icon solid fa-signal">
-					<img src="images/pic01.jpg" alt="" />
-				</a>
-				<div class="content">
-					<h3>OUR MISSION</h3>
-					<p>
-						Our mission is to bridge the gap between hearing health, children's mental health,
-						learning support, and inclusive education within underserved communities through
-						research-based and evidence-based approaches.
-					</p>
-					<p>
-						We work with schools, families, healthcare professionals, and communities to provide
-						assessment, early intervention, support, and awareness.
-					</p>
-				</div>
-			</section>
-
-			<section class="feature right">
-				<a href="#" class="image icon solid fa-code">
-					<img src="images/pic02.jpg" alt="" />
-				</a>
-				<div class="content">
-					<h3>WHY IT MATTERS</h3>
-					<p>
-						Many children experience hearing and learning challenges that go unnoticed,
-						affecting confidence, communication, and academic performance.
-						<br /><br />
-						Early identification and intervention can transform a child’s learning journey.
-						<br /><br />
-						Every child deserves to learn and thrive in an inclusive environment.
-					</p>
-				</div>
-			</section>
-
-			<section class="feature left">
-				<a href="#" class="image icon solid fa-mobile-alt">
-					<img src="images/pic03.jpg" alt="" />
-				</a>
-				<div class="content">
-					<h3>WHAT WE DO</h3>
-					<p>
-						• Classroom acoustic assessments and hearing screenings<br />
-						• Teacher screening tools (CHAPS, SIFTER, SAEBRS)<br />
-						• Referrals and aural rehabilitation<br />
-						• Counselling and family support<br />
-						• Advocacy for inclusive education and hearing health awareness
-					</p>
-				</div>
-			</section>
-
-		</div>
-
-		<footer class="major container medium">
-			<h3>PARTNER WITH US AND MAKE A DIFFERENCE</h3>
-
+	<div class="card">
+		<img src="images/pic01.jpg" alt="">
+		<div class="card-content">
+			<h3>Our Mission</h3>
 			<p>
-				Whether you are a parent, educator, healthcare professional, volunteer, or organisation,
-				your support helps us reach more children and communities.
+				To bridge hearing health, learning support, and inclusive education
+				through evidence-based interventions and community outreach.
 			</p>
-
-			<p>
-				Together, we can create inclusive spaces where every child is heard and supported.
-			</p>
-
-			<h4>Banking Details</h4>
-			<p>Capitec Bank (Business)</p>
-			<p>HearSmart2Learn</p>
-			<p>Account No: 2547479059</p>
-
-			<ul class="actions special">
-				<li><a href="#" class="button">Leave a Donation</a></li>
-			</ul>
-		</footer>
-
-	</div>
-
-	<!-- Footer -->
-	<div id="footer">
-		<div class="container medium">
-
-			<header class="major last">
-				<h2>Questions or comments?</h2>
-			</header>
-
-			<p>Thank you for your time. We would like to hear from you.</p>
-
-			<p>Email: hearsmart2learn@gmail.com</p>
-			<p>Phone: +27 72 405 4226</p>
-			<p>Location: 381 Kubeka Street, Katlehong, Gauteng, South Africa</p>
-			<p>NPC: 2026/342781/08</p>
-			<p>Director: Mitchel Rebecca Ndlovu</p>
-			<p>Director: Julian Luyanda Ngwenya</p>
-			<p>Director: Isaac Makhoba</p>
-
-			<form method="POST" action="https://formspree.io/f/mlgvpvjw">
-				<div class="row">
-					<div class="col-6 col-12-mobilep">
-						<input type="text" name="name" placeholder="Name" />
-					</div>
-					<div class="col-6 col-12-mobilep">
-						<input type="email" name="email" placeholder="Email" />
-					</div>
-					<div class="col-12">
-						<textarea name="message" placeholder="Message" rows="6"></textarea>
-					</div>
-					<div class="col-12">
-						<ul class="actions special">
-							<li><input type="submit" value="Send Message" /></li>
-						</ul>
-					</div>
-				</div>
-			</form>
-
-			<ul class="icons">
-				<li><a href="#" class="icon brands fa-twitter"></a></li>
-				<li><a href="#" class="icon brands fa-facebook-f"></a></li>
-				<li><a href="#" class="icon brands fa-instagram"></a></li>
-				<li><a href="#" class="icon brands fa-github"></a></li>
-			</ul>
-
-			<ul class="copyright">
-				<li>&copy; HearSmart2Learn. All rights reserved.</li>
-				<li>Design: HTML5 UP</li>
-			</ul>
-
 		</div>
 	</div>
 
-	<!-- Scripts -->
-	<script src="assets/js/jquery.min.js"></script>
-	<script src="assets/js/browser.min.js"></script>
-	<script src="assets/js/breakpoints.min.js"></script>
-	<script src="assets/js/util.js"></script>
-	<script src="assets/js/main.js"></script>
+	<div class="card">
+		<img src="images/pic02.jpg" alt="">
+		<div class="card-content">
+			<h3>Why It Matters</h3>
+			<p>
+				Hearing and learning challenges often go unnoticed, affecting academic success and confidence.
+				Early support changes everything.
+			</p>
+		</div>
+	</div>
+
+	<div class="card">
+		<img src="images/pic03.jpg" alt="">
+		<div class="card-content">
+			<h3>What We Do</h3>
+			<p>
+				Screenings, classroom acoustic assessments, referrals,
+				aural rehabilitation, and family support programs.
+			</p>
+		</div>
+	</div>
+
+</section>
+
+<!-- CALL TO ACTION -->
+<section class="cta">
+	<h2>Partner With Us</h2>
+	<p>Help us reach more children and build inclusive learning environments.</p>
+
+	<a class="button" href="#">Donate / Support</a>
+
+	<p style="margin-top:20px;">
+		Capitec Bank Business<br>
+		HearSmart2Learn<br>
+		Account: 2547479059
+	</p>
+</section>
+
+<!-- FOOTER -->
+<footer>
+	<h3>Contact Us</h3>
+	<p>Email: hearsmart2learn@gmail.com</p>
+	<p>Phone: +27 72 405 4226</p>
+	<p>Location: Katlehong, Gauteng, South Africa</p>
+	<p>NPC: 2026/342781/08</p>
+</footer>
 
 </body>
 </html>
